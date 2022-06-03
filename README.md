@@ -1,2 +1,2 @@
-# jupyerhub_custom
+# jupyerthub_custom
 custom pages for JupyterHub
