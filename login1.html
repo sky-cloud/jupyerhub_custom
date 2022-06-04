@@ -28,13 +28,15 @@
 }
 </style>
 </head>
+
+<H2>Welcome to JupyterHub @ CTS ShanghaiTech!</H2>
+
 <div id="login-main" class="container">
     <p id='insecure-login-warning' class='hidden'>
         Warning: JupyterHub seems to be served over an unsecured HTTP connection.
         We strongly recommend enabling HTTPS for JupyterHub.
     </p>
 
-    <H2>Welcome to JupyterHub @ CTS ShanghaiTech!</H2>
     {% if login_error %}
     <p class="login_error">
         {{login_error}}
@@ -48,6 +50,7 @@
 
     <input type="submit" id="login_submit" class='btn btn-jupyter' value='Sign In' tabindex="3" />
 
+  </div>
     <H3>Get An Account</H3>
     <p>Please write an email to <a href="mailto:zhangxf2@shanghaitech.edu.cn">Xiaofeng Zhang</a> to get an account</p>
 
@@ -62,7 +65,6 @@
     <ul>
       <li>JupyterHub for test is available on June 3, 2022.</li>
     </ul>
-    </div>
 {% endif %}
 
 {% endblock login %}
